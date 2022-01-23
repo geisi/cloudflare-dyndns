@@ -9,7 +9,7 @@ class Kernel extends ConsoleKernel
 {
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('dyndns:refresh')->everyMinute();
+        $schedule->command('dyndns:run')->everyMinute();
     }
 
     /**

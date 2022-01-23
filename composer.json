@@ -14,7 +14,8 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "geisi/laravel-dyndns": "dev-main"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -61,6 +62,13 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/geisi/laravel-dyndns"
+        }
+
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }

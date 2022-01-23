@@ -1,6 +1,6 @@
 <?php
 
-use App\Services\CloudflareDynDNS;
+use Geisi\DynDns\DynDns;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (CloudflareDynDNS $cloudflareDynDNS) {
-    $cloudflareDynDNS->handle();
+Route::get('/', function () {
+    DynDns::handle();
 });
